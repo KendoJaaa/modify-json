@@ -27,6 +27,7 @@ class JsonBox extends Component {
         className={cn('json-box__text-area', { '--disabled': !this.props.onChange })}
         onChange={this.props.onChange} 
         disabled={!this.props.onChange}
+        value={this.props.value}
       />
     )
   }

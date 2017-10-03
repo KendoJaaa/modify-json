@@ -30,8 +30,8 @@ class App extends Component {
   }
 }
 
-function modify () {
-  console.log('modify function')
+function modify (value) {
+  return value
 }
 
 export default App
