@@ -1,4 +1,4 @@
-import './App.css'
+import './JsonBox.css'
 
 import React, { Component } from 'react'
 
@@ -20,9 +20,12 @@ class JsonBox extends Component {
     )
   }
 
-  renderBox = () => {
+  renderTextField = () => {
     return (
-      <input onChange={this.props.onChange} />
+      <input 
+        className='json-box__text-field'
+        onChange={this.props.onChange} 
+      />
     )
   }
 
@@ -30,7 +33,7 @@ class JsonBox extends Component {
     return (
       <div className='json-box'>
         {this.renderHeader()}
-        {this.renderBox()}
+        {this.renderTextField()}
       </div>
     )
   }
