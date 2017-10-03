@@ -20,10 +20,10 @@ class JsonBox extends Component {
     )
   }
 
-  renderTextField = () => {
+  renderTextArea = () => {
     return (
-      <input 
-        className='json-box__text-field'
+      <textarea
+        className='json-box__text-area'
         onChange={this.props.onChange} 
       />
     )
@@ -33,7 +33,7 @@ class JsonBox extends Component {
     return (
       <div className='json-box'>
         {this.renderHeader()}
-        {this.renderTextField()}
+        {this.renderTextArea()}
       </div>
     )
   }
