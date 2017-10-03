@@ -3,6 +3,7 @@ import './App.css'
 import React, { Component } from 'react'
 
 import JsonBox from './JsonBox'
+import modify from './modify'
 
 class App extends Component {
   state = {
@@ -23,15 +24,11 @@ class App extends Component {
         />
         <JsonBox 
           header='Output'
-          value={modify(this.state.value)}
+          value={JSON.stringify(modify(this.state.value), null, 2)}
         />
       </div>
     )
   }
-}
-
-function modify (value) {
-  return value
 }
 
 export default App
