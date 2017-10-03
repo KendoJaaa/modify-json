@@ -9,7 +9,7 @@ class JsonBox extends Component {
 
   static propTypes = {
     header: PropTypes.string.isRequired,
-    value: PropTypes.string.isRequired,
+    value: PropTypes.string,
     onChange: PropTypes.func,
   }
 
